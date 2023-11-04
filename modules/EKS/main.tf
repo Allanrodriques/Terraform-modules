@@ -3,7 +3,6 @@
 resource "aws_eks_cluster" "eks_cluster" {
   name     = var.PROJECT_NAME
 
-  # The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations
 
   role_arn = var.EKS_CLUSTER_ROLE_ARN
   # Desired Kubernetes master version
